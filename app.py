@@ -4,6 +4,11 @@ import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 import pandas as pd
+import os
+
+# Set the Streamlit server port dynamically
+PORT = int(os.environ.get("PORT", 8000))
+
 
 class StudentPerformanceModel(nn.Module):
     def __init__(self):
