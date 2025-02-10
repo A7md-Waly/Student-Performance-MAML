@@ -55,6 +55,5 @@ if st.button("Predict Score"):
     user_features = [feature1, feature2, feature3, feature4]
     predicted_score = predict_final_score(user_features)
     st.success(f"Predicted Final Exam Score: {predicted_score}")
-if __name__ == "__main__":
-    st.run(port=8000, server_address="0.0.0.0")
+
 
